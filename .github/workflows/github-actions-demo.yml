@@ -18,8 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-        echo "This workflow was triggered by the ${{ github.event_name }} event"
-        echo "The name of your branch is ${{ github.ref }}"
+          echo \"This workflow was triggered by the ${{ github.event_name }} event\"
+          echo \"The name of your branch is ${{ github.ref }}\"
 
       - uses: actions/checkout@v3.3.0
 
